@@ -163,7 +163,7 @@ function canvasLoop() {
         var depth = verticalDepth < horizontalDepth ? verticalDepth : horizontalDepth;
         depth *= Math.cos(playerAngle - currentAngle);
         var wallHeight = Math.min(mapScale * 2000 / (depth + 0.0001), height);
-        context.fillStyle = verticalDepth < horizontalDepth ? '#aaa' : '#555';
+        context.fillStyle = verticalDepth < horizontalDepth ? '#cf7a2b' : '#fa9434';
 
         context.fillRect(
             ray,
